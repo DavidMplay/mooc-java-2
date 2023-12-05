@@ -11,6 +11,7 @@ public class Cubes {
                 break;
             } int num = Integer.valueOf(Stringnum);
             System.out.println(num * num * num);
+            
         }
     }
 }
