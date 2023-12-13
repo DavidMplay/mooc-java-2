@@ -24,10 +24,13 @@ public class AverageOfSelectedNumbers {
         String avg = scanner.nextLine();
         if (avg.equals("p")) {
             average = inputs.stream().mapToInt(s -> Integer.valueOf(s)).filter(x -> x > 0).average().getAsDouble();
-            System.out.println("Average of the negative numbers: " + average);
-        } else if (avg.equals("n")) {
-            average = inputs.stream().mapToInt(s -> Integer.valueOf(s)).filter(x -> x < 0).average().getAsDouble();
             System.out.println("Average of the positive numbers: " + average);
+
+        }
+        if (avg.equals("n")) {
+            average = inputs.stream().mapToInt(s -> Integer.valueOf(s)).filter(x -> x < 0).average().getAsDouble();
+            System.out.println("Average of the negative numbers: " + average);
+
         }
 
     }
