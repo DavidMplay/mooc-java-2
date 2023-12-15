@@ -54,4 +54,5 @@ public class Suitcase {
 
         return this.Items.size() + " items (" + this.totalWeight() + " kg)";
     }
+    
 }
