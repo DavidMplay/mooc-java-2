@@ -12,11 +12,13 @@ public class MainProgram {
 
         System.out.println(humans);
 
-        /*
-         * Uncomment the comment below when you have completed the compareTo-method.
-         */
-        //Collections.sort(humans);
-        System.out.println(humans);
+    
+            
 
-    }
+ 
+
+    Collections.sort(humans);
+    System.out.println (humans);
+
+}
 }
